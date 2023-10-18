@@ -1,0 +1,3 @@
+~Sweets{regNumber=1, name='Oreo', productionDate=2023-10-18, productionPrice=1.23, producedQuantity=230, sweetsType=BISQUITS}
+}Sweets{regNumber=3, name='Hiper', productionDate=2023-10-18, productionPrice=1.23, producedQuantity=320, sweetsType=WAFFLE}
+€Sweets{regNumber=5, name='Multihull', productionDate=2023-07-22, productionPrice=0.4, producedQuantity=576, sweetsType=WAFFLE}

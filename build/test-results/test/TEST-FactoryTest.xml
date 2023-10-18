@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FactoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-18T13:55:59" hostname="DESKTOP-HLB5EU9" time="0.018">
+  <properties/>
+  <testcase name="displaySweetsQuantityGreaterThan()" classname="FactoryTest" time="0.018"/>
+  <system-out><![CDATA[Sweets{regNumber=1, name='Oreo', productionDate=2023-10-18, productionPrice=1.23, producedQuantity=230, sweetsType=BISQUITS}
+Sweets{regNumber=3, name='Hiper', productionDate=2023-10-18, productionPrice=1.23, producedQuantity=320, sweetsType=WAFFLE}
+Sweets{regNumber=5, name='Multihull', productionDate=2023-07-22, productionPrice=0.4, producedQuantity=576, sweetsType=WAFFLE}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
