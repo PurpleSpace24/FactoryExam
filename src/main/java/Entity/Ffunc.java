@@ -11,4 +11,7 @@ public interface Ffunc {
      void displaySweetsQuantityGreaterThan2();
 
      void displaySweetsByProductionPriceToLow();
+
+     void displaySweetsBySweetType();
+
 }

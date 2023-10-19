@@ -58,11 +58,11 @@ public class Factory implements Ffunc{
     }
 
     public void displaySweetsByQuantityProduced(){
-        this.sweetsList.stream().sorted(((sweets, sweets1) -> sweets1.getProducedQuantity().compareTo(sweets.getProducedQuantity()))).forEach(System.out::println);
+        sweetsList.stream().sorted(((sweets, sweets1) -> sweets1.getProducedQuantity().compareTo(sweets.getProducedQuantity()))).forEach(System.out::println);
     }
 
     public void displaySweetsByProductionDateAndName(){
-        this.sweetsList.stream().sorted(Sweets.sweetsProductionDate.thenComparing(Sweets.sweetsName)).forEach(System.out::println);
+        sweetsList.stream().sorted(Sweets.sweetsProductionDate.thenComparing(Sweets.sweetsName)).forEach(System.out::println);
     }
 
     public void displayChocolateSweets(){
@@ -80,7 +80,12 @@ public class Factory implements Ffunc{
     }
 
     public void displaySweetsByProductionPriceToLow() {
-        this.sweetsList.stream().sorted(((sweets, sweets1) -> sweets1.getProductionPrice().compareTo(sweets.getProductionPrice()))).forEach(System.out::println);
+        sweetsList.stream().sorted(((sweets, sweets1) -> sweets1.getProductionPrice().compareTo(sweets.getProductionPrice()))).forEach(System.out::println);
+    }
+
+    public void displaySweetsBySweetType() {
+        sweetsList.stream().sorted(((sweets, sweets1) -> sweets.getSweetsType().getN().compareTo(sweets1.getSweetsType().getN()))).forEach(sweets ->
+                System.out.println("Name: " + sweets.getName() + "\nSweetType: " + sweets.getSweetsType()));
     }
 
 }
