@@ -14,12 +14,14 @@ public class Main {
         Sweets sweets4 = new Sweets(4,"T", LocalDate.of(2023,8,19),0.69,54, SweetType.BISQUITS);
         Sweets sweets5 = new Sweets(5,"Multihull", LocalDate.of(2023,7,22),0.4,576, SweetType.WAFFLE);
         Sweets sweets6 = new Sweets(6,"Svoge", LocalDate.of(2023,6,29),2.13,123, SweetType.CHOCOLATE);
+        Sweets sweets7 = new Sweets(7,"Svoge", LocalDate.of(2023,6,30),1.98,242, SweetType.CHOCOLATE);
 
         factory.addSweets(sweets);
         factory.addSweets(sweets2);
         factory.addSweets(sweets3);
         factory.addSweets(sweets4);
         factory.addSweets(sweets5);
+        factory.addSweets(sweets7);
         factory.addSweets(sweets6);
 
         System.out.println("Display sweets: ");
