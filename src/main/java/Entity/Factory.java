@@ -79,4 +79,8 @@ public class Factory implements Ffunc{
         sweetsList.stream().filter(sweets -> sweets.getProducedQuantity() > 200).forEach(System.out::println);
     }
 
+    public void displaySweetsByProductionPriceToLow() {
+        this.sweetsList.stream().sorted(((sweets, sweets1) -> sweets1.getProductionPrice().compareTo(sweets.getProductionPrice()))).forEach(System.out::println);
+    }
+
 }

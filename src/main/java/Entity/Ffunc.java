@@ -9,4 +9,6 @@ public interface Ffunc {
      void displayChocolateSweets();
      void displaySweetsQuantityGreaterThan(int quantity);
      void displaySweetsQuantityGreaterThan2();
+
+     void displaySweetsByProductionPriceToLow();
 }
