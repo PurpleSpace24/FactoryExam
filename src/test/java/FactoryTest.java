@@ -25,8 +25,8 @@ public class FactoryTest {
         Factory factory = new Factory();
 
         Sweets sweets = new Sweets(1,"Oreo", LocalDate.of(2023,10,18),1.23,23000, SweetType.BISQUITS);
-        Sweets sweets2 = new Sweets(2,"Milka", LocalDate.of(2023,10,18),1.23,23000, SweetType.CHOCOLATE);
         Sweets sweets3 = new Sweets(3,"Hiper", LocalDate.of(2023,10,18),1.23,23000, SweetType.WAFFLE);
+        Sweets sweets2 = new Sweets(2,"Milka", LocalDate.of(2023,10,18),1.23,23000, SweetType.CHOCOLATE);
 
         factory.addSweets(sweets);
         factory.addSweets(sweets2);
@@ -132,5 +132,47 @@ public class FactoryTest {
         factory.addSweets(sweets6);
 
         factory.displaySweetsQuantityGreaterThan2();
+    }
+
+    @Test
+    public void displaySweetsByProductionPriceToLow(){
+        Factory factory = new Factory();
+
+        Sweets sweets = new Sweets(1,"Oreo", LocalDate.of(2023,10,18),1.23,230, SweetType.BISQUITS);
+        Sweets sweets2 = new Sweets(2,"Milka", LocalDate.of(2023,9,13),2.69,198, SweetType.CHOCOLATE);
+        Sweets sweets3 = new Sweets(3,"Hiper", LocalDate.of(2023,10,18),3.35,320, SweetType.WAFFLE);
+        Sweets sweets4 = new Sweets(4,"T", LocalDate.of(2023,8,19),0.69,54, SweetType.BISQUITS);
+        Sweets sweets5 = new Sweets(5,"Multihull", LocalDate.of(2023,7,22),0.4,576, SweetType.WAFFLE);
+        Sweets sweets6 = new Sweets(6,"Svoge", LocalDate.of(2023,6,29),3.4,123, SweetType.CHOCOLATE);
+
+        factory.addSweets(sweets);
+        factory.addSweets(sweets2);
+        factory.addSweets(sweets3);
+        factory.addSweets(sweets4);
+        factory.addSweets(sweets5);
+        factory.addSweets(sweets6);
+
+        factory.displaySweetsByProductionPriceToLow();
+    }
+
+    @Test
+    public void displaySweetsBySweetType(){
+        Factory factory = new Factory();
+
+        Sweets sweets = new Sweets(1,"Oreo", LocalDate.of(2023,10,18),1.23,230, SweetType.BISQUITS);
+        Sweets sweets2 = new Sweets(2,"Milka", LocalDate.of(2023,9,13),2.69,198, SweetType.CHOCOLATE);
+        Sweets sweets3 = new Sweets(3,"Hiper", LocalDate.of(2023,10,18),3.35,320, SweetType.WAFFLE);
+        Sweets sweets4 = new Sweets(4,"T", LocalDate.of(2023,8,19),0.69,54, SweetType.BISQUITS);
+        Sweets sweets5 = new Sweets(5,"Multihull", LocalDate.of(2023,7,22),0.4,576, SweetType.WAFFLE);
+        Sweets sweets6 = new Sweets(6,"Svoge", LocalDate.of(2023,6,29),3.4,123, SweetType.CHOCOLATE);
+
+        factory.addSweets(sweets);
+        factory.addSweets(sweets2);
+        factory.addSweets(sweets3);
+        factory.addSweets(sweets5);
+        factory.addSweets(sweets4);
+        factory.addSweets(sweets6);
+
+        factory.displaySweetsBySweetType();
     }
 }
