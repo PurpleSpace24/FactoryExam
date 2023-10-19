@@ -2,7 +2,7 @@ package Entity;
 
 import java.util.*;
 
-public class Factory {
+public class Factory implements Ffunc{
 
     private List<Sweets> sweetsList;
     private Set<Sweets> sweetsSet;
@@ -78,6 +78,5 @@ public class Factory {
     public void displaySweetsQuantityGreaterThan2(){
         sweetsList.stream().filter(sweets -> sweets.getProducedQuantity() > 200).forEach(System.out::println);
     }
-
 
 }
